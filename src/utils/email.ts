@@ -15,7 +15,6 @@ export const sendEmail = async (data: EmailData) => {
     const templatePath = path.join(__dirname, '../templates/email.html');
     let html = fs.readFileSync(templatePath, 'utf8');
 
-    // Replace placeholders
     html = html.replace('{{name}}', data.name)
         .replace('{{email}}', data.email)
         .replace('{{selection}}', data.selection)
