@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            color: #2563eb;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Contact Form Submission</h2>
+        </div>
+
+        <p><strong>Name:</strong> {{name}}</p>
+        <p><strong>Email:</strong> {{email}}</p>
+        <p><strong>Selection:</strong> {{selection}}</p>
+        <p><strong>Message:</strong> {{message}}</p>
+        <p><strong>IP Address:</strong> {{ip}}</p>
+
+        <div class="footer">
+            <p>This email was sent from your website contact form.</p>
+        </div>
+    </div>
+</body>
+
+</html>
